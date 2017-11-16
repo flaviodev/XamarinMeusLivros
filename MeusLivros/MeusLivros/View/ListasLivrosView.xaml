@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:MeusLivros.View" 
+            x:Class="MeusLivros.View.ListasLivrosView" Title="Meus Livros">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="Sobre" Order="Primary" Text="Sobre" Priority="0" Clicked="SobreClicked" />
+    </ContentPage.ToolbarItems>
+
+    <local:LivrosALerView />
+    <local:LivrosLidosView />
+</TabbedPage>
+    

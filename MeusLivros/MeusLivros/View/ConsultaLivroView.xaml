@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeusLivros.View.ConsultaLivroView" Title="Consulta Livro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ISBN-13: "/>
+            <Entry x:Name="ISBN" IsEnabled="False" />
+
+            <Label Text="Título: "/>
+            <Entry x:Name="Titulo" IsEnabled="False"/>
+
+            <Label Text="Autor: "/>
+            <Entry x:Name="Autores" IsEnabled="False"/>
+
+            <Label Text="Descrição: "/>
+            <Editor x:Name="Descricao" Keyboard="Chat" IsEnabled="False" HeightRequest="400"/>
+
+            <Label Text="Número de Páginas: "/>
+            <Entry x:Name="NumeroPaginas" IsEnabled="False" VerticalOptions="End"/>
+
+            <Button x:Name="Edita" Text="Editar" Clicked="EditarClicked" VerticalOptions="End"/>
+
+            <Button x:Name="Exclui" Text="Excluir" Clicked="ExcluirClicked" VerticalOptions="End"/>
+
+            <Button x:Name="Estado" Clicked="AlterarEstadoClicked" VerticalOptions="End"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

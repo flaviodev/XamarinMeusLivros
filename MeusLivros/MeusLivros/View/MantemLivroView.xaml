@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeusLivros.View.MantemLivroView">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ISBN-13: "/>
+            <Entry x:Name="ISBN" Placeholder="Informe o ISBN"/>
+            <Button Text="Buscar dados do livro pelo ISBN" Clicked="BuscarLivroClicked" />
+
+            <Label Text="Título: "/>
+            <Entry x:Name="Titulo" Placeholder="Informe o título do livro"/>
+
+            <Label Text="Autor: "/>
+            <Entry x:Name="Autores" Placeholder="Informe o nome do(s) autor(es) "/>
+
+            <Label Text="Descrição: "/>
+            <Editor x:Name="Descricao" Keyboard="Chat"  HeightRequest="400"/>
+
+            <Label Text="Número de Páginas: "/>
+            <Entry x:Name="NumeroPaginas" Placeholder="Informe o número de páginas" VerticalOptions="End"/>
+
+            <Button x:Name="Salvar" Text="Salvar" Clicked="SalvarClicked" VerticalOptions="End" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

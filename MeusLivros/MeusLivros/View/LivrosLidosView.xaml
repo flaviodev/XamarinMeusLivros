@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeusLivros.View.LivrosLidosView" Title="Livros lidos">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Livros que li"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand" />
+            <ListView x:Name="ListaLivrosLidos"  ItemSelected="Selecionar"
+                      HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand" />
+            <Button x:Name="NovoLivroButton" Text="Acrescentar Livro lido"  
+                    Command="{Binding NovoCommand}"
+                    HorizontalOptions="CenterAndExpand" VerticalOptions="End" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
